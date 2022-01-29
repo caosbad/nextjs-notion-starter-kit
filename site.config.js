@@ -12,7 +12,7 @@ module.exports = {
   author: 'Caos',
 
   // open graph metadata (optional)
-  description: 'A website about blockchain develop and investment',
+  description: 'A website about blockchain development and investment',
   socialImageTitle: 'Caos website',
   socialImageSubtitle: 'Hello World! 👋',
 

@@ -111,6 +111,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
     recordMap
   })
 
+  console.log(Object.values(recordMap['block']))
+
+
   if (!config.isServer) {
     // add important objects to the window global for easy debugging
     const g = window as any

@@ -4,6 +4,7 @@ import { getPreviewImages } from './get-preview-images'
 import { mapNotionImageUrl } from './map-image-url'
 import { fetchTweetAst } from 'static-tweets'
 import pMap from 'p-map'
+import got from 'got'
 
 export const notion = new NotionAPI({
   apiBaseUrl: process.env.NOTION_API_BASE_URL
@@ -103,4 +104,15 @@ export async function getPage(pageId: string): Promise<ExtendedRecordMap> {
 
 export async function search(params: SearchParams): Promise<SearchResults> {
   return notion.search(params)
+}
+
+export async function dbQuery(id: string): Promise<any> {
+  let url = `https://api.notion.com/v1/databases/${id}/query`
+  return got.post(url, {
+    headers: {
+      Authorization:
+        'Bearer secret_T2LXg1sSUI6CtG55b212CAjbHBtDGcqnUb4JrCVE2kM',
+      'Notion-Version': '2021-08-16'
+    }
+  }).json()
 }
