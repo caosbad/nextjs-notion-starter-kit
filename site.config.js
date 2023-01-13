@@ -46,7 +46,7 @@ module.exports = {
   pageUrlOverrides: {
     '/about': '714dcffe961d48fe83a23a4d8e2bf2c9',
     '/contact': '7a535bf53146427b81ebfa01adc4fc47',
-    '/notes': '2fe0e353b1a7407683c326900abb6c7a',
+    '/reading': '5dc9964a053d4530a3efe9e611ad0e73',
     '/memos': '7108b56d4c174a3295209c54d3a0453e'
   }
   // pageUrlOverrides: null
