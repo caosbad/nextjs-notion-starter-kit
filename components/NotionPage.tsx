@@ -230,7 +230,7 @@ export function NotionPage({
     recordMap
   })
 
-  console.log(Object.values(recordMap['block']))
+  console.log(Object.values(recordMap.block))
 
 
   if (!config.isServer) {

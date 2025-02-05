@@ -15,8 +15,6 @@ export default siteConfig({
 
   // open graph metadata (optional)
   description: 'A website about blockchain development and investment',
-  socialImageTitle: 'Caos website',
-  socialImageSubtitle: 'Hello World! 👋',
 
   // social usernames (optional)
   twitter: 'caosbad',

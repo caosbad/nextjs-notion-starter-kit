@@ -1,3 +1,4 @@
+import got from 'got'
 import {
   type ExtendedRecordMap,
   type SearchParams,
@@ -62,7 +63,7 @@ export async function getPage(pageId: string): Promise<ExtendedRecordMap> {
 
   if (isPreviewImageSupportEnabled) {
     const previewImageMap = await getPreviewImageMap(recordMap)
-    ;(recordMap as any).preview_images = previewImageMap
+      ; (recordMap as any).preview_images = previewImageMap
   }
 
   await getTweetsMap(recordMap)
@@ -75,7 +76,7 @@ export async function search(params: SearchParams): Promise<SearchResults> {
 }
 
 export async function dbQuery(id: string): Promise<any> {
-  let url = `https://api.notion.com/v1/databases/${id}/query`
+  const url = `https://api.notion.com/v1/databases/${id}/query`
   return got.post(url, {
     headers: {
       Authorization:
