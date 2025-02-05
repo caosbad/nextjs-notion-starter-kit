@@ -61,10 +61,10 @@ export default siteConfig({
       title: 'Contact',
       pageId: '7a535bf53146427b81ebfa01adc4fc47'
     },
-    {
-      title: 'Reading',
-      pageId: '5dc9964a053d4530a3efe9e611ad0e73'
-    },
+    // {
+    //   title: 'Reading',
+    //   pageId: '5dc9964a053d4530a3efe9e611ad0e73'
+    // },
     {
       title: 'Memos',
       pageId: '7108b56d4c174a3295209c54d3a0453e'
