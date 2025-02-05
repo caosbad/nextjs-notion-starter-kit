@@ -1,7 +1,6 @@
-import React from 'react'
-import { domain } from 'lib/config'
-import { resolveNotionPage } from 'lib/resolve-notion-page'
-import { NotionPage } from 'components'
+import { NotionPage } from '@/components/NotionPage'
+import { domain } from '@/lib/config'
+import { resolveNotionPage } from '@/lib/resolve-notion-page'
 
 export const getStaticProps = async () => {
   try {
